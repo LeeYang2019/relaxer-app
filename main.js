@@ -10,11 +10,11 @@ function breathAnimation() {
   text.innerText = 'Breathe In!';
   container.className = 'container grow';
 
-  //then hold
+  //executes hold after breatheTime expires
   setTimeout(() => {
     text.innerText = 'Hold';
 
-    // then breathe out
+    // executes breathe out after holdtime
     setTimeout(() => {
       text.innerText = 'Breathe Out!';
       container.className = 'container shrink';
